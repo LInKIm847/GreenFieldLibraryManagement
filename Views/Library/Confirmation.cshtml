@@ -1,0 +1,19 @@
+@model GreenFieldLib.Models.LibraryBook
+
+@{
+    ViewData["Title"] = "Confirmation";
+}
+
+<h2>Book Registered Successfully!</h2>
+
+<div>
+    <p><strong>Book Title:</strong> @Model.Title</p>
+    <p><strong>Author:</strong> @Model.Author</p>
+    <p><strong>Category:</strong> @Model.Category</p>
+    <p><strong>Number of Copies:</strong> @Model.NumberOfCopies</p>
+</div>
+
+<div class="mt-3">
+    <a asp-controller="Library" asp-action="Register" class="btn btn-primary">Register Another Book</a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Back to Home</a>
+</div>
